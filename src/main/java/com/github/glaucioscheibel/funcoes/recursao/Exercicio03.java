@@ -6,9 +6,8 @@ public class Exercicio03 {
     public static int mdc(int x, int y) {
         if (y == 0) {
             return x;
-        } else {
-            return mdc(y, x % y);
         }
+        return mdc(y, x % y);
     }
 
     static void main() {
