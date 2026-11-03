@@ -11,13 +11,13 @@ public class Main {
         int opcao;
         do {
             System.out.println("""
-                    Menu:
-                    1 - Create
-                    2 - Read
-                    3 - Update
-                    4 - Delete
-                    0 - Fim
-                    """);
+                Menu:
+                1 - Create
+                2 - Read
+                3 - Update
+                4 - Delete
+                0 - Fim
+                """);
             opcao = input.nextInt();
             input.nextLine();
             switch (opcao) {

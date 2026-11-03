@@ -50,6 +50,6 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "Conta{" + "id=" + id + ", saldo=" + saldo + '}';
+        return "Conta{id=" + id + ", saldo=" + saldo + '}';
     }
 }
