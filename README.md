@@ -856,7 +856,7 @@ public class Exercicio09 {
 
 1. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
    que implemente as operações básicas de C.R.U.D.[^2] para fazerem a persistência dos objetos na base chave-valor
-   usando o tipo de dados JSON[^4] através da biblioteca [GSON](https://github.com/google/gson) já incluída na
+   usando o tipo de dados JSON[^4] através da biblioteca [GSON](https://github.com/google/gson), já incluída na
    biblioteca [Jedis](https://github.com/redis/jedis).
    Neste exercício será usada a mesma estratégia de chaves do exercício 8, ou seja, chave "contatos4:" + o id da pessoa.
 
