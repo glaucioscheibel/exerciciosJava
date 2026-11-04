@@ -9,7 +9,7 @@ public class Exercicio02 {
         for (int i = 1; i <= 10; i++) {
             redis.set("chave" + i, "valor" + i);
         }
-        Set<String> chaves = redis.keys("*");
+        Set<String> chaves = redis.keys("chave*");
         for (String chave : chaves) {
             System.out.printf("%s = %s%n", chave, redis.get(chave));
         }
