@@ -23,6 +23,8 @@
 1. [Agradecimentos](#agradecimentos)
 1. [Informações legais](#informações-legais)
 
+[Versão destes exercícios em Go](https://github.com/glaucioscheibel/exerciciosGo)
+
 ## Lógica
 
 1. Um homem precisa atravessar um rio com um barco que possui capacidade de transportar apenas ele e mais uma de suas
@@ -397,7 +399,7 @@
    pensando. A cada _chute_ que o programa der, o usuário deverá responder se ele acertou, se o valor foi acima ou
    abaixo do pensado. Caso o programa acerte em até 10 tentativas, o programa será considerado vitorioso.
 
-1. O seguinte programa em Java&trade; não está funcionando e lhe foi pedido para ser corrigido. Apenas olhando o
+1. O seguinte programa em Java não está funcionando e lhe foi pedido para ser corrigido. Apenas olhando o
    código, qual foi o erro de programação?
 
    ```java
@@ -648,10 +650,10 @@
    | **6** | 11 |  2 |  3 |  2 |  5 |    | 14 |
    | **7** |  1 | 15 | 13 |  1 | 13 | 14 |    |
 
-    1. Faça um programa que leia a matriz anterior e informe ao usuário o tempo necessário para percorrer duas cidades
-       por ele fornecidas;
-    1. Faça um programa que permita ao usuário informa várias cidades e as armazene no vetor de rota até que ele informe
-       0 (zero), após isto imprima o tempo total para cumprir todo o trajeto fornecido passando por todas as cidades.
+   1. Faça um programa que leia a matriz anterior e informe ao usuário o tempo necessário para percorrer duas cidades
+      por ele fornecidas;
+   1. Faça um programa que permita ao usuário informa várias cidades e as armazene no vetor de rota até que ele informe
+      0 (zero), após isto imprima o tempo total para cumprir todo o trajeto fornecido passando por todas as cidades.
 
 1. Implemente um programa que exiba um triângulo de Pascal (Tartalha) de ordem n, sendo n informado pelo usuário. Para
    tal, considere uma matriz quadrada de ordem n, o triângulo de Pascal segue a seguinte regra de formação:
@@ -756,11 +758,11 @@
 1. O banco Firmeza desenvolveu um sistema de contas e saldos bancários e lhe contratou para executar um teste de
    desempenho para avaliar a robusteza e a quantidade de transações possíveis de serem processadas por 3 minutos. Para
    avaliar a desempenho do sistema foram criadas 100 contas correntes fictícias com
-   R$ 1.000,00 de saldo inicial. Crie então um teste com programação concorrente que simule 5 sistemas fazendo transferências de valores aleatórios de até R$
-   2.500,00 de uma conta aleatória para outra igualmente aleatória. A cada 5 segundos, imprima o valor total no cofre do
-   banco, que deverá ser sempre de
-   R$ 100.000,00. Após 3 minutos de execução, verifique a quantidade de transações que foram executadas e se o valor total no cofre continua sendo R$
-   100.000,00.
+   R$ 1.000,00 de saldo inicial. Crie então um teste com programação concorrente que simule 5 sistemas fazendo
+   transferências de valores aleatórios de até R$ 2.500,00 de uma conta aleatória para outra igualmente aleatória. A
+   cada 5 segundos, imprima o valor total no cofre do banco, que deverá ser sempre de R$ 100.000,00. Após 3 minutos de
+   execução, verifique a quantidade de transações que foram executadas e se o valor total no cofre continua sendo
+   R$ 100.000,00.
 
 1. Reescreva o exercício 3
    usando [Executors](https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/concurrent/package-summary.html#executors-heading).
@@ -822,8 +824,8 @@ public class Exercicio09 {
 
 ## NoSQL Chave-Valor
 
-1. Faça um programa que conecte numa base [Redis&reg;](https://redis.io/) e chame as funções `Ping` e `Echo`. Utilize a
-   linguagem [Java&trade;](https://www.java.com/) com a biblioteca [Jedis](https://github.com/redis/jedis).
+1. Faça um programa que conecte numa base [Redis](https://redis.io/) e chame as funções `Ping` e `Echo`. Utilize a
+   linguagem [Java](https://www.java.com/) com a biblioteca [Jedis](https://github.com/redis/jedis).
 
 1. Crie 10 entradas chave-valor aleatórios e em seguida acesse o banco Redis com algum programa GUI
    ([RedisInsight](https://redis.io/insight/), [Another Redis Desktop Manager](https://goanother.com/)
@@ -846,12 +848,12 @@ public class Exercicio09 {
 
 1. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
    que implemente as operações básicas de C.R.U.D.[^2] para fazerem a persistência dos objetos na base chave-valor
-   usando do mecanismo de serialização do Java&trade;. Neste exercício será usada a mesma estratégia de chaves do
+   usando do mecanismo de serialização do Java. Neste exercício será usada a mesma estratégia de chaves do
    exercício anterior, ou seja, chave "contatos2:" + o id da pessoa.
 
 1. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
    que implemente as operações básicas de C.R.U.D.[^2] para fazerem a persistência dos objetos na base chave-valor
-   usando do mecanismo de serialização do Java&trade;. Neste exercício será usado uma entrada _Hash_ somente. Cada valor
+   usando do mecanismo de serialização do Java. Neste exercício será usado uma entrada _Hash_ somente. Cada valor
    interno do _Hash_ terá o id da pessoa como chave e a objeto serializado como valor.
 
 1. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
@@ -879,11 +881,11 @@ public class Exercicio09 {
     1. Cite vantagens e desvantagens do uso do modelo documento neste caso.
 
    > Dica: Use o comando `mongoimport --db=<nomedabase> <arquivo.json>`
-   do [MongoDB&reg; Database Tools](https://www.mongodb.com/try/download/database-tools)
+   do [MongoDB Database Tools](https://www.mongodb.com/try/download/database-tools)
 
 1. Com a base de dados do [mflix](src/main/resources/mongodb/mflix/) e faça os seguintes programas com a
-   linguagem [Java&trade;](https://www.java.com/) e a
-   biblioteca [MongoDB&reg; Synchronous Driver](https://www.mongodb.com/pt-br/docs/drivers/java/sync/current/):
+   linguagem [Java](https://www.java.com/) e a
+   biblioteca [MongoDB Synchronous Driver](https://www.mongodb.com/pt-br/docs/drivers/java/sync/current/):
     1. Liste os filmes com o nome "_The Room_".
     1. Liste os filmes que possuam uma duração ("_runtime_") menor ou igual à 15 minutos.
     1. Liste os filmes produzidos nos anos 1980s ordenados do maior ao menor valor no campo "_imdb.rating_".
@@ -921,7 +923,7 @@ public class Exercicio09 {
        > Obs: A entidade Autor deverá possuir um índice único por nome e a entidade livro deverá possuir um índice único
        por título.
 
-    1. Crie o livro [O Corvo](https://pt.wikipedia.org/wiki/O_Corvo) e o armazene na base do MongoDB&reg; e após isto
+    1. Crie o livro [O Corvo](https://pt.wikipedia.org/wiki/O_Corvo) e o armazene na base do MongoDB e após isto
        crie os dados do autor Edgar Allan Poe, do seu endereço residencial, e do livro e o armazene.
     1. Busque o autor _Edgar Allan Poe_ e apresente todos os seus dados (endereços e livros).
     1. Adicione mais 2 livros escritos por este autor.
@@ -982,6 +984,7 @@ facilitando a criação desta lista:
 
 ## Informações legais
 
+- **Go** is a registered trademark of Google.
 - **Java** is a registered trademark of Oracle.
 - **MongoDB** is a registered trademark of MongoDB Inc.
 - **Python** is a trademark of the Python Software Foundation.
