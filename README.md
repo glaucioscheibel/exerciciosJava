@@ -3,25 +3,25 @@
 ## Conteúdo
 
 1. [Lógica](#lógica)
-1. [Algoritmo](#algoritmo)
-1. [Estrutura sequencial](#estrutura-sequencial)
-1. [Estrutura de decisão](#estrutura-de-decisão)
-    1. [Estrutura condicional](#estrutura-condicional)
-1. [Estrutura de repetição](#estrutura-de-repetição)
-1. [_Strings_](#strings)
-1. [Vetores e coleções](#vetores-e-coleções)
-1. [Matrizes](#matrizes)
-1. [Funções](#funções)
-    1. [Funções recursivas](#funções-recursivas)
-1. [Programação concorrente](#programação-concorrente)
-1. [NoSQL Chave-Valor](#nosql-chave-valor)
-1. [NoSQL Documento](#nosql-documento)
+2. [Algoritmo](#algoritmo)
+3. [Estrutura sequencial](#estrutura-sequencial)
+4. [Estrutura de decisão](#estrutura-de-decisão)
+   1. [Estrutura condicional](#estrutura-condicional)
+5. [Estrutura de repetição](#estrutura-de-repetição)
+6. [_Strings_](#strings)
+7. [Vetores e coleções](#vetores-e-coleções)
+8. [Matrizes](#matrizes)
+9. [Funções](#funções)
+   1. [Funções recursivas](#funções-recursivas)
+10. [Programação concorrente](#programação-concorrente)
+11. [NoSQL Chave-Valor](#nosql-chave-valor)
+12. [NoSQL Documento](#nosql-documento)
     1. [ODM](#nosql-documento-odm)
-1. [Filmes](#filmes)
-1. [Livros](#livros)
-1. [Palestras](#palestras)
-1. [Agradecimentos](#agradecimentos)
-1. [Informações legais](#informações-legais)
+13. [Filmes](#filmes)
+14. [Livros](#livros)
+15. [Palestras](#palestras)
+16. [Agradecimentos](#agradecimentos)
+17. [Informações legais](#informações-legais)
 
 [Versão destes exercícios em Go](https://github.com/glaucioscheibel/exerciciosGo)
 
@@ -32,22 +32,22 @@
    atravessar o rio sem perder as suas cargas?
    [link racha-cuca](https://rachacuca.com.br/jogos/o-lobo-e-a-ovelha/)
 
-1. Três jesuítas e três canibais precisam atravessar um rio. No entanto, dispõem apenas de um barco com capacidade para
+2. Três jesuítas e três canibais precisam atravessar um rio. No entanto, dispõem apenas de um barco com capacidade para
    duas pessoas. Por medida de segurança não se permite que em alguma das margens do rio a quantidade de jesuítas seja
    inferior à quantidade de canibais. Qual a sequência de viagens necessárias para a travessia do rio com segurança para
    os jesuítas?
    [link racha-cuca](https://rachacuca.com.br/jogos/missionarios-e-canibais/)
 
-1. Para comemorar o aniversário de Cláudio, ele e mais quatro amigos – Alberto, Beto, Dino e Eurico – foram almoçar
+3. Para comemorar o aniversário de Cláudio, ele e mais quatro amigos – Alberto, Beto, Dino e Eurico – foram almoçar
    juntos no restaurante da escola. As mesas são redondas e acomodam exatamente cinco pessoas. Cláudio e Dino sentam-se
    um ao lado do outro. Alberto e Beto não se sentam um ao lado do outro. Os dois amigos sentados ao lado de Eurico são:
-    - Alberto e Beto
-    - Cláudio e Dino
-    - Dino e Beto
-    - Cláudio e Alberto
-    - Alberto e Dino
 
-1. Uma equipe de meninas está participando de uma gincana preparada pelos professores da escola. Após muitas peripécias,
+   - Alberto e Beto
+   - Cláudio e Dino
+   - Dino e Beto
+   - Cláudio e Alberto
+   - Alberto e Dino
+4. Uma equipe de meninas está participando de uma gincana preparada pelos professores da escola. Após muitas peripécias,
    elas finalmente encontraram o cofre escondido que contém a última tarefa a ser resolvida. Mas o cofre está protegido
    com um cadeado digital aberto somente se uma senha de quatro letras for digitada. Junto ao cofre elas encontraram
    também um pedaço de papel com as letras Xkzk. Inicialmente elas pensaram que essa era a senha, mas o cofre não abriu.
@@ -55,100 +55,93 @@
    elas perceberam que os nomes das cinco meninas da equipe tinham exatamente quatro letras. Seria essa a ligação com as
    letras encontradas? Não demorou muito para elas abrirem o cofre, pois a senha era mesmo o nome de uma das meninas.
    Qual era a senha do cofre?
-    - Anna
-    - Lisa
-    - Nina
-    - Iris
-    - Nara
-
-1. Um palíndrome é um número inteiro positivo, sem zeros à esquerda, que é o mesmo se lido da esquerda para a direita ou
+   - Anna
+   - Lisa
+   - Nina
+   - Iris
+   - Nara
+5. Um palíndrome é um número inteiro positivo, sem zeros à esquerda, que é o mesmo se lido da esquerda para a direita ou
    da direita para a esquerda. Por exemplo, os números 11 e 65256 são palíndromes, mas os números 010 e 123 não são. A
    diferença entre o valor do maior palíndrome de três dígitos e o menor palíndrome de três dígitos é:
-    - 989
-    - 888
-    - 898
-    - 998
-    - 979
-
-1. Na Nlogônia, as cédulas de dinheiro são de $ 1,00, $ 3,00, $ 9,00, $ 27,00, e $ 81,00. Num dado momento, um vendedor
+   - 989
+   - 888
+   - 898
+   - 998
+   - 979
+6. Na Nlogônia, as cédulas de dinheiro são de $ 1,00, $ 3,00, $ 9,00, $ 27,00, e $ 81,00. Num dado momento, um vendedor
    possui apenas cinco cédulas, uma de cada um dos valores das cédulas existentes na Nlogônia. Qual dos valores abaixo
    não é possível ser dado como troco por esse vendedor?
-    - $40,00
-    - $35,00
-    - $31,00
-    - $13,00
-    - $4,00
-
-1. . Em uma sala há duas lousas (quadros negros), a lousa A e a lousa B. Na lousa A foi escrito o número 7 e na lousa B
+   - $40,00
+   - $35,00
+   - $31,00
+   - $13,00
+   - $4,00
+7. . Em uma sala há duas lousas (quadros negros), a lousa A e a lousa B. Na lousa A foi escrito o número 7 e na lousa B
    foi escrito o número 13. Após isso, um aluno entrou na sala, apagou o número da lousa B e em seu lugar escreveu um
    número igual ao número escrito na lousa A. Depois disso, outro aluno entrou na sala, apagou o número da lousa A e em
    seu lugar escreveu um número igual ao número atualmente escrito na lousa B. Depois dessas mudanças, quais são os
    números escritos nas
    lousas?
-    - 13 na lousa A e 7 na lousa B
-    - 7 na lousa A e 13 na lousa B
-    - 7 na lousa A e 7 na lousa B
-    - 13 na lousa A e 13 na lousa B
-    - 20 na lousa A e 6 na lousa B
-
-1. Maria tinha alguns biscoitos. Ela comeu dois e deu dois à irmã. Depois deu metade do que sobrou ao irmão. Se o irmão
+   - 13 na lousa A e 7 na lousa B
+   - 7 na lousa A e 13 na lousa B
+   - 7 na lousa A e 7 na lousa B
+   - 13 na lousa A e 13 na lousa B
+   - 20 na lousa A e 6 na lousa B
+8. Maria tinha alguns biscoitos. Ela comeu dois e deu dois à irmã. Depois deu metade do que sobrou ao irmão. Se o irmão
    ficou com 5 biscoitos, quantos tinha Maria no início?
+9. Uma pessoa lê um livro de 100 páginas em 6 dias. Em quantos dias essa pessoa lê um livro de 150 páginas?
+10. Lúcia foi ao mesmo tempo, a décima terceira melhor classificada e a décima terceira pior classificada de um concurso.
+    Quantos eram os concorrentes?
+11. Ao observar a sequência de números abaixo, descubra qual das opções completa a série.
 
-1. Uma pessoa lê um livro de 100 páginas em 6 dias. Em quantos dias essa pessoa lê um livro de 150 páginas?
-
-1. Lúcia foi ao mesmo tempo, a décima terceira melhor classificada e a décima terceira pior classificada de um concurso.
-   Quantos eram os concorrentes?
-
-1. Ao observar a sequência de números abaixo, descubra qual das opções completa a série.
-
-   66, 59, 52, 45, 38, ??
+    66, 59, 52, 45, 38, ??
     - 32
     - 35
     - 31
     - 41
     - 43
 
-1. Ao observar a sequência de números abaixo, descubra qual das opções completa a série.
+12. Ao observar a sequência de números abaixo, descubra qual das opções completa a série.
 
-   102, 103, 105, 108, ??
+    102, 103, 105, 108, ??
     - 109
     - 114
     - 106
     - 111
     - 112
 
-1. Ao observar a sequência de números abaixo, descubra qual das opções completa a série.
+13. Ao observar a sequência de números abaixo, descubra qual das opções completa a série.
 
-   50, 5, 40, 10, 30, ??
+    50, 5, 40, 10, 30, ??
     - 35
     - 20
     - 25
     - 15
     - 37
 
-1. Para A = V, B = V e C = F, qual o resultado da avaliação das seguintes expressões lógicas:
-    1. A or C and not B
-    1. (A or B) and (A and C)
+14. Para A = V, B = V e C = F, qual o resultado da avaliação das seguintes expressões lógicas:
 
-1. Há cinco casas diferentes em cinco cores diferentes em uma fileira. Em cada casa mora uma pessoa com uma diferente
-   nacionalidade. Os cinco proprietários bebem um certo tipo de bebida, fuma cigarro de uma certa marca e tem um certo
-   tipo de animal de estimação. Nenhum dos proprietários tem o mesmo tipo de animal ou de marca de cigarro, ou de
-   bebida. Quem é o dono do peixe? [link racha-cuca](https://rachacuca.com.br/logica/problemas/teste-de-einstein/)
+    1. A or C and not B
+    2. (A or B) and (A and C)
+15. Há cinco casas diferentes em cinco cores diferentes em uma fileira. Em cada casa mora uma pessoa com uma diferente
+    nacionalidade. Os cinco proprietários bebem um certo tipo de bebida, fuma cigarro de uma certa marca e tem um certo
+    tipo de animal de estimação. Nenhum dos proprietários tem o mesmo tipo de animal ou de marca de cigarro, ou de
+    bebida. Quem é o dono do peixe? [link racha-cuca](https://rachacuca.com.br/logica/problemas/teste-de-einstein/)
     1. O britânico mora na casa vermelha
-    1. O suíço tem um cão como animal de estimação
-    1. O dinamarquês bebe chá
-    1. A casa verde fica imediatamente à esquerda da casa branca
-    1. O dono da casa verde bebe café
-    1. O proprietário que fuma _Pall Mall_ tem um pássaro
-    1. O dono da casa amarela fuma _Dunhill_
-    1. O proprietário morando na casa do centro bebe leite
-    1. O norueguês mora na primeira casa
-    1. O dono que fuma Blends mora ao lado do que cria gatos
-    1. O proprietário que cria um cavalo mora ao lado do que fuma _Dunhill_
-    1. O dono que fuma _Bluemasters_ bebe cerveja
-    1. O alemão fuma _Prince_
-    1. O norueguês mora ao lado da casa azul
-    1. O proprietário que fuma _Blends_ mora ao lado do que bebe água
+    2. O suíço tem um cão como animal de estimação
+    3. O dinamarquês bebe chá
+    4. A casa verde fica imediatamente à esquerda da casa branca
+    5. O dono da casa verde bebe café
+    6. O proprietário que fuma _Pall Mall_ tem um pássaro
+    7. O dono da casa amarela fuma _Dunhill_
+    8. O proprietário morando na casa do centro bebe leite
+    9. O norueguês mora na primeira casa
+    10. O dono que fuma Blends mora ao lado do que cria gatos
+    11. O proprietário que cria um cavalo mora ao lado do que fuma _Dunhill_
+    12. O dono que fuma _Bluemasters_ bebe cerveja
+    13. O alemão fuma _Prince_
+    14. O norueguês mora ao lado da casa azul
+    15. O proprietário que fuma _Blends_ mora ao lado do que bebe água
 
 ## Algoritmo
 
@@ -158,174 +151,168 @@
 
 1. Faça um programa que imprima a mensagem "Alo mundo" na tela.
 
-1. Faça um programa que peça as 4 notas bimestrais, calcule e imprima a média.
+2. Faça um programa que peça as 4 notas bimestrais, calcule e imprima a média.
 
-1. Faça um programa que leia três notas de um aluno, calcule e escreva a média final deste aluno. Considerar que a média
+3. Faça um programa que leia três notas de um aluno, calcule e escreva a média final deste aluno. Considerar que a média
    é ponderada e que o peso das notas é 2, 3 e 5.
 
    $mediafinal = \frac{n1 \times 2 + n2 \times 3 + n3 \times 5}{10}$
 
-1. Faça um programa para calcular a área de uma circunferência, considerando a fórmula $area = \pi \times raio^2$.
+4. Faça um programa para calcular a área de uma circunferência, considerando a fórmula $area = \pi \times raio^2$.
    Utilize as variáveis `area` e `raio`, a constante &pi; (&pi; = 3,14159) e os operadores aritméticos de multiplicação.
 
-1. Faça um programa que peça dois números, base e expoente, calcule e imprima o primeiro número elevado ao segundo
+5. Faça um programa que peça dois números, base e expoente, calcule e imprima o primeiro número elevado ao segundo
    número. Utilize a função de potência da linguagem.
 
-1. Faça um programa que:
-    1. Leia o nome;
-    1. Leia o sobrenome;
-    1. Concatene o nome com o sobrenome;
-    1. Apresente o nome completo.
+6. Faça um programa que:
 
-1. Faça um programa que leia uma temperatura em graus _Celsius_ e apresente-a convertida em graus _Fahrenheit_. A
+   1. Leia o nome;
+   2. Leia o sobrenome;
+   3. Concatene o nome com o sobrenome;
+   4. Apresente o nome completo.
+7. Faça um programa que leia uma temperatura em graus _Celsius_ e apresente-a convertida em graus _Fahrenheit_. A
    fórmula de conversão é: $^\circ F = \frac{^\circ C \times 9}{5} + 32$, na qual &#8457; é a temperatura em
    _Fahrenheit_ e &#8451; é a temperatura em _Celsius_.
-
-1. Faça um programa que calcule a quantidade de litros de combustível gasta em uma viagem, utilizando um automóvel que
+8. Faça um programa que calcule a quantidade de litros de combustível gasta em uma viagem, utilizando um automóvel que
    faz 12Km por litro. Para obter o cálculo, o usuário deve fornecer o tempo gasto na viagem e a velocidade média
    durante ela. Desta forma, será possível obter a distância percorrida com a
    fórmula $Distancia = Tempo \times Velocidade$. Tendo o valor da distância, basta calcular a quantidade de litros de
    combustível utilizada na viagem com a fórmula: $LitrosUsados = \frac{Distancia}{12}$. O programa deve apresentar os
    valores da velocidade média, tempo gasto na viagem, a distância percorrida e a quantidade de litros utilizada na
    viagem.
-
-1. Faça um programa que leia os valores de _Comprimento_, _Largura_ e _Altura_ e apresente o valor do volume de uma
+9. Faça um programa que leia os valores de _Comprimento_, _Largura_ e _Altura_ e apresente o valor do volume de uma
    caixa retangular. Utilize para o cálculo a fórmula $Volume = Comprimento \times Largura \times Altura$.
-
-1. Faça um programa que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa
-   expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias. Calcular quantos dias a pessoa já viveu até
-   hoje.
-
-1. Faça um programa para calcular e imprimir o número de lâmpadas necessárias para iluminar um determinado cômodo de uma
-   residência. Dados de entrada: a potência da lâmpada utilizada (em watts), as dimensões (largura e comprimento, em
-   metros) do cômodo. Considere que a potência necessária é de 18 watts por metro quadrado.
-
-1. Faça um programa que armazene o valor 10 em uma variável A e o valor 20 em uma variável B. A seguir (utilizando
-   apenas atribuições entre variáveis) troque os seus conteúdos fazendo com que o valor que está em A passe para B e
-   vice-versa. Ao final, escrever os valores que ficaram armazenados nas variáveis.
-
-1. Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser
-   pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em
-   latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o
-   preço total.
-
-1. Considere a seguinte situação: Descontam-se inicialmente 10% do salário bruto do trabalhador como contribuição à
-   previdência social. Após esse desconto, há outro desconto de 5% sobre o valor restante do salário bruto, a título
-   de imposto de renda. Faça um programa que leia o salário bruto de um cidadão e imprima o seu salário líquido.
+10. Faça um programa que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa
+    expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias. Calcular quantos dias a pessoa já viveu até
+    hoje.
+11. Faça um programa para calcular e imprimir o número de lâmpadas necessárias para iluminar um determinado cômodo de uma
+    residência. Dados de entrada: a potência da lâmpada utilizada (em watts), as dimensões (largura e comprimento, em
+    metros) do cômodo. Considere que a potência necessária é de 18 watts por metro quadrado.
+12. Faça um programa que armazene o valor 10 em uma variável A e o valor 20 em uma variável B. A seguir (utilizando
+    apenas atribuições entre variáveis) troque os seus conteúdos fazendo com que o valor que está em A passe para B e
+    vice-versa. Ao final, escrever os valores que ficaram armazenados nas variáveis.
+13. Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser
+    pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em
+    latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o
+    preço total.
+14. Considere a seguinte situação: Descontam-se inicialmente 10% do salário bruto do trabalhador como contribuição à
+    previdência social. Após esse desconto, há outro desconto de 5% sobre o valor restante do salário bruto, a título
+    de imposto de renda. Faça um programa que leia o salário bruto de um cidadão e imprima o seu salário líquido.
 
 ## Estrutura de decisão
 
 1. Faça um programa que peça dois números e imprima o maior deles.
 
-1. Faça um programa que leia três números e imprima o maior deles.
+2. Faça um programa que leia três números e imprima o maior deles.
 
-1. As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,10 se forem compradas pelo menos 12
+3. As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,10 se forem compradas pelo menos 12
    unidades. Escreva um programa que leia o número de maçãs compradas, calcule e imprima o custo total da compra.
 
-1. Faça um programa para aprovar empréstimos bancários. O código deve pedir três informações: valor do empréstimo,
+4. Faça um programa para aprovar empréstimos bancários. O código deve pedir três informações: valor do empréstimo,
    número de parcelas e salário do solicitante. Aprovar empréstimo caso o valor das parcelas represente no máximo 30% do
    salário do solicitante.
 
-1. A empresa paga ao corretor uma comissão calculada conforme o valor de suas vendas. Se o valor da venda de um corretor
+5. A empresa paga ao corretor uma comissão calculada conforme o valor de suas vendas. Se o valor da venda de um corretor
    for maior que R$ 50.000,00 a comissão será de 12% do valor vendido. Se o valor da venda do corretor estiver entre R$
    30.000,00 e R$ 50.000,00 (incluindo extremos) a comissão será de 9,5%. Em qualquer outro caso, a comissão será de 7%.
    Escreva um programa onde será informado nome do corretor e o valor da venda, após isto o programa irá calcular o
    valor da comissão.
 
-1. Faça um programa onde serão informados as quatro notas do aluno. O programa irá então apresentar a média, se foi
+6. Faça um programa onde serão informados as quatro notas do aluno. O programa irá então apresentar a média, se foi
    aprovado (nota &ge; 7) ou se ficou em exame. Caso o aluno ficou em exame, o programa irá então perguntar qual foi a
    nota do exame e então irá calcular a nova média (média anterior com a nota do exame) e informar se ele foi aprovado
    (nova média &ge; 5) ou se foi reprovado.
 
-1. A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá
+7. A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá
    hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um programa que leia o número de
    horas trabalhadas em um mês, o salário por hora e imprima o salário total do funcionário, que deverá ser acrescido
    das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas).
 
-1. Faça um programa que efetue a leitura de três valores numéricos representando os lados de um triângulo. O programa
+8. Faça um programa que efetue a leitura de três valores numéricos representando os lados de um triângulo. O programa
    deverá verificar e informar se os lados fornecidos formam realmente um triângulo (cada lado é menor que a soma dos
    outros dois lados). Se esta condição for verdadeira, deverá ser indicado qual tipo de triângulo foi formado:
    isósceles (dois lados iguais e um diferente), escaleno (todos os lados diferentes) ou equilátero (todos os lados são
    iguais).
 
-1. Faça um programa para uma empresa que decide dar um reajuste aos funcionários conforme os seguintes critérios:
-    - 50% para aqueles que ganham menos do que três salários mínimos;
-    - 20% para aqueles que ganham entre três até dez salários mínimos;
-    - 15% para aqueles que ganham acima de dez até vinte salários mínimos;
-    - 10% para os demais funcionários.
+9. Faça um programa para uma empresa que decide dar um reajuste aos funcionários conforme os seguintes critérios:
 
-1. Faça um programa que calcule as raízes de uma equação do segundo grau, na forma $ax² + bx + c$. O programa deverá
-   pedir os valores de a, b e c e fazer as consistências, informando ao usuário nas seguintes situações:
+   - 50% para aqueles que ganham menos do que três salários mínimos;
+   - 20% para aqueles que ganham entre três até dez salários mínimos;
+   - 15% para aqueles que ganham acima de dez até vinte salários mínimos;
+   - 10% para os demais funcionários.
+10. Faça um programa que calcule as raízes de uma equação do segundo grau, na forma $ax² + bx + c$. O programa deverá
+    pedir os valores de a, b e c e fazer as consistências, informando ao usuário nas seguintes situações:
     - Se o usuário informar o valor de A igual a zero, a equação não é do segundo grau e o programa não deve fazer pedir
       os demais valores, sendo encerrado;
     - Se o delta calculado for negativo, a equação não possui raízes reais. Informe ao usuário e encerre o programa;
     - Se o delta calculado for igual a zero a equação possui apenas uma raiz real; informe-a ao usuário;
     - Se o delta for positivo, a equação possui duas raízes reais; informe-as ao usuário.
 
-   Fórmula de _bhaskara_:
+    Fórmula de _bhaskara_:
 
-   $x = -b \pm \frac{\sqrt{b^2 - 4ac}}{2a}$
+    $x = -b \pm \frac{\sqrt{b^2 - 4ac}}{2a}$
 
-1. Faça um programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não
-   bissexto. Regras para o cálculo dos anos bissextos:
+11. Faça um programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não
+    bissexto. Regras para o cálculo dos anos bissextos:
 
     1. A cada 4 anos é ano bissexto.
-    1. A cada 100 anos não é ano bissexto.
-    1. A cada 400 anos é ano bissexto.
-    1. Prevalecem as últimas regras sobre as primeiras
+    2. A cada 100 anos não é ano bissexto.
+    3. A cada 400 anos é ano bissexto.
+    4. Prevalecem as últimas regras sobre as primeiras
+12. Um posto está vendendo combustíveis com a seguinte tabela de descontos. Escreva um programa que leia o número de
+    litros vendidos e o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o
+    valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$
+    2,90.
 
-1. Um posto está vendendo combustíveis com a seguinte tabela de descontos. Escreva um programa que leia o número de
-   litros vendidos e o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o
-   valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$
-   2,90.
-    <table border="1" align="center">
-        <tr>
-            <th rowspan="2" align="center">Álcool</th>
-            <td>Até 20 litros, desconto de 3% por litro</td>
-        </tr>
-        <tr>
-            <td>Acima de 20 litros, desconto de 5% por litro</td>
-        </tr>
-        <tr>
-            <th rowspan="2" align="center">Gasolina</th>
-            <td>Até 20 litros, desconto de 4% por litro</td>
-        </tr>
-        <tr>
-            <td>Acima de 20 litros, desconto de 6% por litro</td>
-        </tr>
-    </table>
+     <table border="1" align="center">
+         <tr>
+             <th rowspan="2" align="center">Álcool</th>
+             <td>Até 20 litros, desconto de 3% por litro</td>
+         </tr>
+         <tr>
+             <td>Acima de 20 litros, desconto de 5% por litro</td>
+         </tr>
+         <tr>
+             <th rowspan="2" align="center">Gasolina</th>
+             <td>Até 20 litros, desconto de 4% por litro</td>
+         </tr>
+         <tr>
+             <td>Acima de 20 litros, desconto de 6% por litro</td>
+         </tr>
+     </table>
 
-1. Uma quitanda está vendendo frutas com a seguinte tabela de preços. Se o cliente comprar mais de 8 kg em frutas ou o
-   valor total da compra ultrapassar R$ 25,00, receberá ainda um desconto de 10% sobre este total. Escreva um algoritmo
-   para ler a quantidade (em kg) de morangos e a quantidade (em kg) de maças adquiridas e imprima o valor a ser pago
-   pelo cliente.
-    <table border="1" align="center">
-        <tr>
-            <td></td>
-            <th>Até 5Kg</th>
-            <th>Acima de 5kg</th>
-        </tr>
-        <tr>
-            <th>Morango</th>
-            <td>R$ 2,50 / kg</td>
-            <td>R$ 2,20 / kg</td>
-        </tr>
-        <tr>
-            <th>Maçã</th>
-            <td>R$ 1,80 / kg</td>
-            <td>R$ 1,50 / kg</td>
-        </tr>
-    </table>
+13. Uma quitanda está vendendo frutas com a seguinte tabela de preços. Se o cliente comprar mais de 8 kg em frutas ou o
+    valor total da compra ultrapassar R$ 25,00, receberá ainda um desconto de 10% sobre este total. Escreva um algoritmo
+    para ler a quantidade (em kg) de morangos e a quantidade (em kg) de maças adquiridas e imprima o valor a ser pago
+    pelo cliente.
+
+     <table border="1" align="center">
+         <tr>
+             <td></td>
+             <th>Até 5Kg</th>
+             <th>Acima de 5kg</th>
+         </tr>
+         <tr>
+             <th>Morango</th>
+             <td>R$ 2,50 / kg</td>
+             <td>R$ 2,20 / kg</td>
+         </tr>
+         <tr>
+             <th>Maçã</th>
+             <td>R$ 1,80 / kg</td>
+             <td>R$ 1,50 / kg</td>
+         </tr>
+     </table>
 
 ### Estrutura Condicional
 
 1. Faça um programa que leia a primeira letra do estado civil de uma pessoa e mostre uma mensagem com a sua descrição
    (Solteiro, Casado, Viúvo, Divorciado, dEsquitado). Mostre uma mensagem de erro caso for informado um código inválido.
 
-1. Faça um programa que leia dois valores do usuário e a operação que ele deseja executar (Operações: (+) soma, (-)
+2. Faça um programa que leia dois valores do usuário e a operação que ele deseja executar (Operações: (+) soma, (-)
    subtração, (/) divisão, (*) multiplicação). Execute a operação desejada e imprima na tela.
 
-1. Uma loja fornece 10% de desconto para funcionários e 5% de desconto para clientes vips. Faça um programa que calcule
+3. Uma loja fornece 10% de desconto para funcionários e 5% de desconto para clientes vips. Faça um programa que calcule
    o valor total a ser pago por uma pessoa. O programa deverá ler o valor total da compra efetuada e um código que
    identifique se o comprador é um cliente comum (1), funcionário (2) ou vip (3).
 
@@ -333,100 +320,98 @@
 
 1. Faça um programa que calcule a soma dos números inteiros de 1 a 100.
 
-1. Escreva um programa que pergunte ao usuário um número e após, imprima na tela o total de 1 até o número lido.
+2. Escreva um programa que pergunte ao usuário um número e após, imprima na tela o total de 1 até o número lido.
    Exemplo: 5: $1 + 2 + 3 + 4 + 5 = 15$
 
-1. Faça um programa que peça dois números, base e expoente, calcule e imprima o primeiro número elevado ao segundo
+3. Faça um programa que peça dois números, base e expoente, calcule e imprima o primeiro número elevado ao segundo
    número. **Não utilize a função de potência da linguagem**.
 
-1. Construa um programa que exiba a tabuada de 1 até N, onde N é informado pelo usuário. ex: Até a tabuada de 3, irá
+4. Construa um programa que exiba a tabuada de 1 até N, onde N é informado pelo usuário. ex: Até a tabuada de 3, irá
    imprimir as tabuadas de 1, 2 e 3.
 
-1. Faça um programa para calcular e imprimir a soma dos cubos dos números pares compreendidos entre A e B (B &gt; A). A
+5. Faça um programa para calcular e imprimir a soma dos cubos dos números pares compreendidos entre A e B (B &gt; A). A
    e B são lidos pelo teclado.
 
-1. Faça um programa que receba um valor depositado na poupança e exiba o valor com rendimento mês a mês durante o
+6. Faça um programa que receba um valor depositado na poupança e exiba o valor com rendimento mês a mês durante o
    período de um ano. Considere fixo os juros da poupança em 0,5% a. m.
 
-1. Número primo é aquele que só é divisível por ele mesmo e pelo número 1. Faça um programa que peça um número inteiro
+7. Número primo é aquele que só é divisível por ele mesmo e pelo número 1. Faça um programa que peça um número inteiro
    ao usuário e determine se o número informado é primo ou não.
 
-1. Faça um programa que calcule o resultado dos 50 primeiros números da seguinte sequência:
+8. Faça um programa que calcule o resultado dos 50 primeiros números da seguinte sequência:
 
    $\frac{1000}{1} - \frac{997}{2} + \frac{994}{3} - \frac{991}{4} + \dots$
 
-1. Faça um programa para calcular e imprimir a seguinte equação:
+9. Faça um programa para calcular e imprimir a seguinte equação:
 
    $37 \times \frac{38}{1} + 38 \times \frac{36}{2} + 35 \times \frac{36}{3} + \dots + 1 \times \frac{2}{37}$
 
-1. Anacleto tem 1,50m e cresce 2 centímetros por ano, enquanto Felisberto tem 1,10m e cresce 3 centímetros por ano.
-   Construa um programa que calcule e apresente quantos anos serão necessários para que Felisberto seja maior que
-   Anacleto.
+10. Anacleto tem 1,50m e cresce 2 centímetros por ano, enquanto Felisberto tem 1,10m e cresce 3 centímetros por ano.
+    Construa um programa que calcule e apresente quantos anos serão necessários para que Felisberto seja maior que
+    Anacleto.
 
-1. Um determinado material radioativo perde metade de sua massa a cada 50 segundos. Dada a massa inicial, em gramas,
-   faça um programa que determine o tempo necessário para que essa massa se torne menor que 0,05 gramas.
+11. Um determinado material radioativo perde metade de sua massa a cada 50 segundos. Dada a massa inicial, em gramas,
+    faça um programa que determine o tempo necessário para que essa massa se torne menor que 0,05 gramas.
 
-1. Supondo que a população de um país A seja da ordem de 80.000 habitantes com uma taxa anual de crescimento de 3% e que
-   a população de B, seja 200.000 habitantes com uma taxa de crescimento de 1,5%. Faça um programa que calcule e imprima
-   o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as
-   taxas de crescimento.
+12. Supondo que a população de um país A seja da ordem de 80.000 habitantes com uma taxa anual de crescimento de 3% e que
+    a população de B, seja 200.000 habitantes com uma taxa de crescimento de 1,5%. Faça um programa que calcule e imprima
+    o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as
+    taxas de crescimento.
 
-1. Uma rainha requisitou os serviços de um monge e disse-lhe que pagaria qualquer preço. O monge, necessitando de
-   alimentos, indagou à rainha sobre o pagamento, se poderia ser feito com grãos de trigo dispostos em um tabuleiro de
-   xadrez (que possui 64 casas), de tal forma que o primeiro quadro deveria conter apenas um grão e os quadros
-   subsequentes, o dobro do quadro anterior. Crie um programa para calcular o total de grãos que o monge recebeu.
+13. Uma rainha requisitou os serviços de um monge e disse-lhe que pagaria qualquer preço. O monge, necessitando de
+    alimentos, indagou à rainha sobre o pagamento, se poderia ser feito com grãos de trigo dispostos em um tabuleiro de
+    xadrez (que possui 64 casas), de tal forma que o primeiro quadro deveria conter apenas um grão e os quadros
+    subsequentes, o dobro do quadro anterior. Crie um programa para calcular o total de grãos que o monge recebeu.
 
-1. Escreva um programa que determine o fatorial de um número. Para este problema, tem-se como entrada o valor do número
-   do qual se deseja calcular o fatorial. O fatorial de 0 é igual a 1. O fatorial de um número N (N!) é definido
-   conforme a seguir:
+14. Escreva um programa que determine o fatorial de um número. Para este problema, tem-se como entrada o valor do número
+    do qual se deseja calcular o fatorial. O fatorial de 0 é igual a 1. O fatorial de um número N (N!) é definido
+    conforme a seguir:
 
-   $N! = 1 \times 2 \times 3 \times 4 \times \dots \times (N - 1) \times N$
+    $N! = 1 \times 2 \times 3 \times 4 \times \dots \times (N - 1) \times N$
 
-1. Faça um programa que peça para o usuário ir informando números até que ele informe 0 (zero). Após isto apresente os
-   seguintes dados sobre os números digitados:
+15. Faça um programa que peça para o usuário ir informando números até que ele informe 0 (zero). Após isto apresente os
+    seguintes dados sobre os números digitados:
+
     1. O maior número;
-    1. O menor número;
-    1. A soma dos números;
-    1. A média deles;
-    1. A quantidade de números pares;
-    1. A quantidade de números ímpares.
+    2. O menor número;
+    3. A soma dos números;
+    4. A média deles;
+    5. A quantidade de números pares;
+    6. A quantidade de números ímpares.
+16. Leia um número positivo do usuário, então, calcule e imprima a sequência Fibonacci (onde cada número é a soma dos
+    dois anteriores) até o primeiro número superior ao número lido. Exemplo: se o usuário informou o número 30, a
+    sequência a ser impressa será 0 1 1 2 3 5 8 13 21 34.
+17. Faça um programa que peça ao usuário pensar em um número de 1 a 1000, o programa então tentará adivinhar o número
+    pensando. A cada _chute_ que o programa der, o usuário deverá responder se ele acertou, se o valor foi acima ou
+    abaixo do pensado. Caso o programa acerte em até 10 tentativas, o programa será considerado vitorioso.
+18. O seguinte programa em Java não está funcionando e lhe foi pedido para ser corrigido. Apenas olhando o
+    código, qual foi o erro de programação?
 
-1. Leia um número positivo do usuário, então, calcule e imprima a sequência Fibonacci (onde cada número é a soma dos
-   dois anteriores) até o primeiro número superior ao número lido. Exemplo: se o usuário informou o número 30, a
-   sequência a ser impressa será 0 1 1 2 3 5 8 13 21 34.
-
-1. Faça um programa que peça ao usuário pensar em um número de 1 a 1000, o programa então tentará adivinhar o número
-   pensando. A cada _chute_ que o programa der, o usuário deverá responder se ele acertou, se o valor foi acima ou
-   abaixo do pensado. Caso o programa acerte em até 10 tentativas, o programa será considerado vitorioso.
-
-1. O seguinte programa em Java não está funcionando e lhe foi pedido para ser corrigido. Apenas olhando o
-   código, qual foi o erro de programação?
-
-   ```java
-   public class Exercicio18 {
-       static void main() {
-           Scanner input = new Scanner(System.in);
-           int cont1 = 0;
-           int cont2 = 0;
-           int brancos = 0;
-           int nulos = 0;
-           int voto = input.nextInt();
-           while (voto != -1) {
-               switch (voto) {
-                   case 1 -> cont1 += 1;
-                   case 2 -> cont2 += 1;
-                   case 0 -> brancos += 1;
-                   default -> nulos += 1;
-               }
-           }
-           System.out.println(cont1);
-           System.out.println(cont2);
-           System.out.println(brancos);
-           System.out.println(nulos);
-           input.close();
-       }
-   }
-   ```
+    ```java
+    public class Exercicio18 {
+        static void main() {
+            Scanner input = new Scanner(System.in);
+            int cont1 = 0;
+            int cont2 = 0;
+            int brancos = 0;
+            int nulos = 0;
+            int voto = input.nextInt();
+            while (voto != -1) {
+                switch (voto) {
+                    case 1 -> cont1 += 1;
+                    case 2 -> cont2 += 1;
+                    case 0 -> brancos += 1;
+                    default -> nulos += 1;
+                }
+            }
+            System.out.println(cont1);
+            System.out.println(cont2);
+            System.out.println(brancos);
+            System.out.println(nulos);
+            input.close();
+        }
+    }
+    ```
 
 ## _Strings_
 
@@ -434,31 +419,29 @@
    utilizando somente letras maiúsculas. Dica: lembre−se que ao informar o nome o usuário pode digitar letras maiúsculas
    ou minúsculas.
 
-1. Dado uma _string_ com uma frase informada pelo usuário (incluindo espaços em branco), conte:
-    1. quantos espaços em branco existem na frase.
-    1. quantas vezes aparecem as vogais a, e, i, o, u.
+2. Dado uma _string_ com uma frase informada pelo usuário (incluindo espaços em branco), conte:
 
-1. Leia um código de cinco algarismos (variável Codigo) e gere o digito verificador (DigitoV) módulo 7 para o mesmo.
+   1. quantos espaços em branco existem na frase.
+   2. quantas vezes aparecem as vogais a, e, i, o, u.
+3. Leia um código de cinco algarismos (variável Codigo) e gere o digito verificador (DigitoV) módulo 7 para o mesmo.
    Supondo que os cinco algarismos do código são ABCDE, uma forma de calcular o dígito desejado, com módulo 7 é:
 
    DigitoV = resto da divisão de S por 7, onde $S = 6A + 5B + 4C + 3D + 2E$
 
-1. Escreva um programa que dado um valor numérico digitado pelo usuário (armazenado em uma variável inteira), imprima
+4. Escreva um programa que dado um valor numérico digitado pelo usuário (armazenado em uma variável inteira), imprima
    cada um dos seus dígitos por extenso.
    Exemplo:
 
-    ```text
-    Entre o número: 4571
-    Resultado: quatro, cinco, sete, um
-    ```
-
-1. _Leet_ é uma forma de se escrever o alfabeto latino usando outros símbolos em lugar das letras, como números, por
+   ```text
+   Entre o número: 4571
+   Resultado: quatro, cinco, sete, um
+   ```
+5. _Leet_ é uma forma de se escrever o alfabeto latino usando outros símbolos em lugar das letras, como números, por
    exemplo. A própria palavra _leet_ admite muitas variações, como l33t ou 1337. O uso do _leet_ reflete uma subcultura
    relacionada ao mundo dos jogos de computador e internet, sendo muito usada para confundir os iniciantes e afirmar-se
    como parte de um grupo. Pesquise sobre as principais formas de traduzir as letras. Depois, faça um programa que peça
    um texto e transforme-o para a grafia _leet speak_.
-
-1. Escreva um programa que, a partir de um nome informado pelo usuário, exiba suas iniciais. As iniciais são formadas
+6. Escreva um programa que, a partir de um nome informado pelo usuário, exiba suas iniciais. As iniciais são formadas
    pela primeira letra de cada nome, sendo que todas deverão aparecer em maiúsculas na saída do programa. Note que os
    conectores e, do, da, dos, das, de, di, du não são considerados nomes e, portanto, não devem ser considerados para a
    obtenção das iniciais. As iniciais devem ser impressas em maiúsculas, ainda que o nome seja entrado todo em
@@ -466,69 +449,62 @@
 
    Exemplos:
 
-    ```text
-    Maria das Graças Pimenta -> MGP
-    João Carlos dos Santos -> JCS
-    ```
-
-1. Faça um programa que peça ao usuário duas _strings_ diferentes, verifique então se elas são anagramas, ou seja, tem o
+   ```text
+   Maria das Graças Pimenta -> MGP
+   João Carlos dos Santos -> JCS
+   ```
+7. Faça um programa que peça ao usuário duas _strings_ diferentes, verifique então se elas são anagramas, ou seja, tem o
    mesmo conjunto de letras.
-
-1. Dado uma frase informada pelo usuário, converta as letras minúsculas em maiúsculas e vice-versa.
+8. Dado uma frase informada pelo usuário, converta as letras minúsculas em maiúsculas e vice-versa.
 
    Exemplo:
 
-    ```text
-    Entrada: PalAVra
-    saída:   pALavRA
-    ```
+   ```text
+   Entrada: PalAVra
+   saída:   pALavRA
+   ```
 
 ## Vetores e coleções
 
 1. Fazer um algoritmo que calcule e imprima o soma, a média, o maior e o menor dos valores armazenados em um vetor A de
    100 elementos numéricos a serem lidos do dispositivo de entrada padrão.
 
-1. Faça um programa que copie o conteúdo de um vetor em um segundo vetor.
+2. Faça um programa que copie o conteúdo de um vetor em um segundo vetor.
 
-1. Faça um programa que some o conteúdo de dois vetores e armazene o resultado em um terceiro vetor.
+3. Faça um programa que some o conteúdo de dois vetores e armazene o resultado em um terceiro vetor.
 
-1. Faça um programa para ler dois vetores V1 e V2 de 15 números cada. Calcular e imprimir a quantidade de vezes que V1 e
+4. Faça um programa para ler dois vetores V1 e V2 de 15 números cada. Calcular e imprimir a quantidade de vezes que V1 e
    V2 possuem os mesmos números e nas mesmas posições.
 
-1. Faça um programa que defina dois vetores A = [2, 4, 7, 13, 14, 15, 16] e B = [1, 6, 7, 11, 13, 16, 18] e faça as
+5. Faça um programa que defina dois vetores A = [2, 4, 7, 13, 14, 15, 16] e B = [1, 6, 7, 11, 13, 16, 18] e faça as
    seguintes operações de conjuntos:
-    - A &bigcup; B: União (todos os valores de ambos os vetores)
-    - A &bigcap; B: Intersecção (apenas valores que existam em ambos)
-    - A &minus; B: Diferença (apenas valores que não apareçam simultaneamente em ambos conjuntos)
 
-1. Escrever um programa que lê um vetor com 20 números inteiros e os imprime na tela. Troque, a seguir, o 1&ordm;
+   - A &bigcup; B: União (todos os valores de ambos os vetores)
+   - A &bigcap; B: Intersecção (apenas valores que existam em ambos)
+   - A &minus; B: Diferença (apenas valores que não apareçam simultaneamente em ambos conjuntos)
+6. Escrever um programa que lê um vetor com 20 números inteiros e os imprime na tela. Troque, a seguir, o 1&ordm;
    elemento com o último, o 2&ordm; com o penúltimo, etc. até o 10&ordm; com o 11&ordm; e imprima na tela o vetor N
    assim modificado.
-
-1. Ler 100 números de matrículas de alunos e armazenar em um vetor. Esses números são distintos, ou seja, não existem
+7. Ler 100 números de matrículas de alunos e armazenar em um vetor. Esses números são distintos, ou seja, não existem
    números de matrículas iguais. Caso o usuário informa um número de matrículo que já existe, o programa deverá emitir
    um alerta.
-
-1. Faça um programa que leia um vetor com N elementos formados por valores do tipo inteiro. Crie então dois novos
+8. Faça um programa que leia um vetor com N elementos formados por valores do tipo inteiro. Crie então dois novos
    vetores, um com os valores pares e outro com os valores ímpares do vetor original.
-
-1. Faça um programa que:
-    1. Leia um vetor A com N elementos já ordenados e um vetor B com M elementos também já ordenados.
-    1. Intercale os dois vetores A e B, formando um vetor C, sendo que ao final do processo de intercalação, o vetor C
-       continue ordenado. Nenhum outro processo de ordenação poderá ser utilizado além da intercalação dos vetores A e
-       B.
-    1. Caso um vetor (A ou B) termine antes do outro, o vetor C deverá ser preenchido com os elementos do vetor que
-       ainda possui informações.
-
-1. Uma escola de samba recebeu como pontos pela alegoria os seguintes 5 valores inclusos no vetor Notas. Lembrando que a
-   nota mais alta e a nota mais baixa são descartadas. Faça um programa que calcule a média final do quesito.
+9. Faça um programa que:
+   1. Leia um vetor A com N elementos já ordenados e um vetor B com M elementos também já ordenados.
+   2. Intercale os dois vetores A e B, formando um vetor C, sendo que ao final do processo de intercalação, o vetor C
+      continue ordenado. Nenhum outro processo de ordenação poderá ser utilizado além da intercalação dos vetores A e
+      B.
+   3. Caso um vetor (A ou B) termine antes do outro, o vetor C deverá ser preenchido com os elementos do vetor que
+      ainda possui informações.
+10. Uma escola de samba recebeu como pontos pela alegoria os seguintes 5 valores inclusos no vetor Notas. Lembrando que a
+    nota mais alta e a nota mais baixa são descartadas. Faça um programa que calcule a média final do quesito.
 
     ```python
     Notas = [9.9, 9.7, 9.8, 10, 10]
     ```
-
-1. Dadas duas sequências com _n_ números inteiros entre 0 e 9, interpretadas como dois números inteiros de _n_
-   algarismos, calcular a sequência de números que representa a soma dos dois inteiros.
+11. Dadas duas sequências com _n_ números inteiros entre 0 e 9, interpretadas como dois números inteiros de _n_
+    algarismos, calcular a sequência de números que representa a soma dos dois inteiros.
 
     ```text
       1  8  2  4  3  4  2  5  1
@@ -541,103 +517,96 @@
 
 1. Faça um programa para ler e imprimir uma matriz 2 &times; 4 de números inteiros.
 
-1. Dada a seguinte matriz A, calcule:
-    1. A soma dos elementos da primeira coluna;
-    1. O produto dos elementos da primeira linha;
-    1. A soma de todos os elementos;
-    1. O produto da diagonal principal.
+2. Dada a seguinte matriz A, calcule:
 
-    ```math
-    A = \begin{bmatrix}
-    1 & 2 & 3 & 4 \\
-    5 & 6 & 7 & 8 \\
-    9 & 10 & 11 & 12 \\
-    13 & 14 & 15 & 16
-    \end{bmatrix}
-    ```
+   1. A soma dos elementos da primeira coluna;
+   2. O produto dos elementos da primeira linha;
+   3. A soma de todos os elementos;
+   4. O produto da diagonal principal.
 
-1. Dada as matrizes A e B determine A + B.
+   ```math
+   A = \begin{bmatrix}
+   1 & 2 & 3 & 4 \\
+   5 & 6 & 7 & 8 \\
+   9 & 10 & 11 & 12 \\
+   13 & 14 & 15 & 16
+   \end{bmatrix}
+   ```
+3. Dada as matrizes A e B determine A + B.
 
-    ```math
-    A = \begin{bmatrix}
-    -10 & 4 & 1 & 6 \\
-    2 & 3 & 2 & 8
-    \end{bmatrix}
-    B = \begin{bmatrix}
-    1 & 8 & 4 & -1 \\
-    0 & 6 & 3 & -3
-    \end{bmatrix}
-    ```
-
-1. Faça um programa que dada a matriz A, gere a matriz oposta -A. Matriz oposta possui valores que se somados à matriz
+   ```math
+   A = \begin{bmatrix}
+   -10 & 4 & 1 & 6 \\
+   2 & 3 & 2 & 8
+   \end{bmatrix}
+   B = \begin{bmatrix}
+   1 & 8 & 4 & -1 \\
+   0 & 6 & 3 & -3
+   \end{bmatrix}
+   ```
+4. Faça um programa que dada a matriz A, gere a matriz oposta -A. Matriz oposta possui valores que se somados à matriz
    original, gera uma matriz com valores zerados.
 
-    ```math
-    A = \begin{bmatrix}
-    2 & -3 \\
-    -1 & 4
-    \end{bmatrix}
-    ```
-
-1. Faça um programa que dada a seguinte matriz A, gere a matriz transposta dela A<sup>t</sup>. Matriz transposta é a que
+   ```math
+   A = \begin{bmatrix}
+   2 & -3 \\
+   -1 & 4
+   \end{bmatrix}
+   ```
+5. Faça um programa que dada a seguinte matriz A, gere a matriz transposta dela A<sup>t</sup>. Matriz transposta é a que
    se obtém trocando-se ordenadamente as linhas pelas colunas.
 
-    ```math
-    A = \begin{bmatrix}
-    -7 & 8 \\
-    4 & 9 \\
-    2 & 1
-    \end{bmatrix}
-    A^t = \begin{bmatrix}
-    -7 & 4 & 2 \\
-    8 & 9 & 1
-    \end{bmatrix}
-    ```
+   ```math
+   A = \begin{bmatrix}
+   -7 & 8 \\
+   4 & 9 \\
+   2 & 1
+   \end{bmatrix}
+   A^t = \begin{bmatrix}
+   -7 & 4 & 2 \\
+   8 & 9 & 1
+   \end{bmatrix}
+   ```
+6. Dada as matrizes A e B determine A &times; B.
 
-1. Dada as matrizes A e B determine A &times; B.
-
-    ```math
-    A = \begin{bmatrix}
-    2 & 3 & 1 \\
-    -1 & 0 & 2
-    \end{bmatrix}
-    B = \begin{bmatrix}
-    1 & -2 \\
-    0 & 5 \\
-    4 & 1
-    \end{bmatrix}
-    ```
-
-1. Matriz identidade é a matriz quadrada de ordem N (2&times;2, 3&times;3, 4&times;4, ... N&times;N), em que os
+   ```math
+   A = \begin{bmatrix}
+   2 & 3 & 1 \\
+   -1 & 0 & 2
+   \end{bmatrix}
+   B = \begin{bmatrix}
+   1 & -2 \\
+   0 & 5 \\
+   4 & 1
+   \end{bmatrix}
+   ```
+7. Matriz identidade é a matriz quadrada de ordem N (2&times;2, 3&times;3, 4&times;4, ... N&times;N), em que os
    elementos da diagonal principal são iguais a 1 e, o restante dos elementos são iguais a 0.
 
    Faça um programa que peça ao usuário informar o tamanho da ordem e gere a matriz identidade.
 
-1. Dada a seguinte matriz 3x3, faça um programa que:
+8. Dada a seguinte matriz 3x3, faça um programa que:
 
-    ```math
-    \begin{bmatrix}1&2&3\\4&5&6\\7&8&9\end{bmatrix}
-    ```
+   ```math
+   \begin{bmatrix}1&2&3\\4&5&6\\7&8&9\end{bmatrix}
+   ```
 
-    1. Apresente a matriz rotacionada em 90&deg;:
+   1. Apresente a matriz rotacionada em 90&deg;:
 
-       ```math
-       \begin{bmatrix}7&4&1\\8&5&2\\9&6&3\end{bmatrix}
-       ```
+      ```math
+      \begin{bmatrix}7&4&1\\8&5&2\\9&6&3\end{bmatrix}
+      ```
+   2. Apresente a matriz rotacionada em 180&deg;:
 
-    1. Apresente a matriz rotacionada em 180&deg;:
+      ```math
+      \begin{bmatrix}9&8&7\\6&5&4\\3&2&1\end{bmatrix}
+      ```
+   3. Apresente a matriz rotacionada em 270&deg;:
 
-        ```math
-        \begin{bmatrix}9&8&7\\6&5&4\\3&2&1\end{bmatrix}
-       ```
-
-    1. Apresente a matriz rotacionada em 270&deg;:
-
-       ```math
-       \begin{bmatrix}3&6&9\\2&5&8\\1&4&7\end{bmatrix}
-       ```
-
-1. O tempo que um determinado avião dispensa para percorrer o trecho entre duas localidades distintas está disponível
+      ```math
+      \begin{bmatrix}3&6&9\\2&5&8\\1&4&7\end{bmatrix}
+      ```
+9. O tempo que um determinado avião dispensa para percorrer o trecho entre duas localidades distintas está disponível
    através da seguinte tabela:
 
    |       |  1 |  2 |  3 |  4 |  5 |  6 |  7 |
@@ -652,18 +621,17 @@
 
    1. Faça um programa que leia a matriz anterior e informe ao usuário o tempo necessário para percorrer duas cidades
       por ele fornecidas;
-   1. Faça um programa que permita ao usuário informa várias cidades e as armazene no vetor de rota até que ele informe
+   2. Faça um programa que permita ao usuário informa várias cidades e as armazene no vetor de rota até que ele informe
       0 (zero), após isto imprima o tempo total para cumprir todo o trajeto fornecido passando por todas as cidades.
-
-1. Implemente um programa que exiba um triângulo de Pascal (Tartalha) de ordem n, sendo n informado pelo usuário. Para
-   tal, considere uma matriz quadrada de ordem n, o triângulo de Pascal segue a seguinte regra de formação:
+10. Implemente um programa que exiba um triângulo de Pascal (Tartalha) de ordem n, sendo n informado pelo usuário. Para
+    tal, considere uma matriz quadrada de ordem n, o triângulo de Pascal segue a seguinte regra de formação:
     1. todos os elementos da primeira coluna da matriz são iguais a 1;
-    1. todos os elementos da diagonal principal da matriz também são iguais a 1;
-    1. para os demais elementos são obtidos pela soma do elemento da mesma coluna na linha de cima com o seu vizinho
+    2. todos os elementos da diagonal principal da matriz também são iguais a 1;
+    3. para os demais elementos são obtidos pela soma do elemento da mesma coluna na linha de cima com o seu vizinho
        esquerdo;
-    1. os elementos acima da diagonal principal não são exibidos.
+    4. os elementos acima da diagonal principal não são exibidos.
 
-   ex: Triângulo de Pascal de ordem 7:
+    ex: Triângulo de Pascal de ordem 7:
 
     ```math
     \begin{matrix}
@@ -681,51 +649,48 @@
 
 1. Crie uma função que receba duas palavras e retorne _True_ caso a primeira palavra seja um prefixo da segunda.
 
-1. Crie uma função que necessite de três argumentos, e que forneça a soma desses três argumentos.
+2. Crie uma função que necessite de três argumentos, e que forneça a soma desses três argumentos.
 
-1. Crie uma função que uma quantidade variável de argumentos, e que forneça a soma desses argumentos.
+3. Crie uma função que uma quantidade variável de argumentos, e que forneça a soma desses argumentos.
 
-1. Faça um programa com duas funções, uma que recebe uma temperatura em _Fahrenheit_ e retorna em _Celcius_ e outra que
+4. Faça um programa com duas funções, uma que recebe uma temperatura em _Fahrenheit_ e retorna em _Celcius_ e outra que
    faz o inverso. Lembrando que as fórmulas são:
 
    $^\circ C = \frac{ (^\circ F - 32) \times 5}{9}$
 
    $^\circ F = \frac{^\circ C \times 9}{5} + 32$
 
-1. Crie uma função que receba como parâmetro um inteiro positivo ano e devolve verdadeiro ou falso se ano for bissexto
+5. Crie uma função que receba como parâmetro um inteiro positivo ano e devolve verdadeiro ou falso se ano for bissexto
    ou não. Anos bissextos ocorrem a cada quatro anos exceto anos múltiplos de 100 que não são múltiplos de 400.
 
-1. Crie uma função que receba o comprimento de cada um dos três lados de um triângulo e retorne se esse triângulo é
+6. Crie uma função que receba o comprimento de cada um dos três lados de um triângulo e retorne se esse triângulo é
    isósceles (dois lados iguais e um diferente), escaleno (todos os lados diferentes), equilátero (todos os lados são
    iguais) ou se não é um triangulo (algum lado é maior que a soma dos outros dois lados).
 
-1. Número primo é aquele que só é divisível por ele mesmo e pelo número 1. Crie uma função que retorne verdadeiro ou
+7. Número primo é aquele que só é divisível por ele mesmo e pelo número 1. Crie uma função que retorne verdadeiro ou
    falso se o número passado é primo ou não.
 
 ### Funções recursivas
 
 1. Crie uma função recursiva que receba um número inteiro positivo N e calcule o somatório dos números de 1 a N.
 
-1. Faça uma função recursiva que calcule e retorne o fatorial de um número inteiro N.
+2. Faça uma função recursiva que calcule e retorne o fatorial de um número inteiro N.
 
-1. O máximo divisor comum (MDC) dos inteiros x e y é o maior número inteiro que é divisor de ambos x e y. Escreva o
+3. O máximo divisor comum (MDC) dos inteiros x e y é o maior número inteiro que é divisor de ambos x e y. Escreva o
    algoritmo de Euclides por uma função recursiva MDC, que retorna o máximo divisor comum de x e y. O MDC de x e y é
    definido como segue:
 
-    - se y é igual a 0, então mdc (x, y) é x;
-    - caso contrário, mdc (x, y) é mdc (y, x mod y), onde mod é o operador módulo (resto).
-
-1. Faça uma função recursiva que calcule e retorne o N-ésimo termo da sequência Fibonacci. Alguns números desta
+   - se y é igual a 0, então mdc (x, y) é x;
+   - caso contrário, mdc (x, y) é mdc (y, x mod y), onde mod é o operador módulo (resto).
+4. Faça uma função recursiva que calcule e retorne o N-ésimo termo da sequência Fibonacci. Alguns números desta
    sequência são: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...
-
-1. Faça uma função recursiva que retorne a inversão de uma _String_ passada como parâmetro. Ex: teste &rarr; etset
-
-1. **Torres de Hanói** é um jogo matemático onde dispomos de 3 pinos: _pino origem_, _pino de trabalho_ e _pino
+5. Faça uma função recursiva que retorne a inversão de uma _String_ passada como parâmetro. Ex: teste &rarr; etset
+6. **Torres de Hanói** é um jogo matemático onde dispomos de 3 pinos: _pino origem_, _pino de trabalho_ e _pino
    destino_. O _pino origem_ contém n discos empilhados por ordem crescente de tamanho (o maior disco fica embaixo). O
    objetivo do jogo é levar todos os discos do _pino origem_ para o _pino destino_, utilizando o _pino de trabalho_ para
    auxiliar a tarefa, e atendendo às seguintes restrições:
-    1. Apenas um disco pode ser movido por vez (o disco que estiver no topo da pilha de um dos pinos).
-    2. Um disco de tamanho maior nunca pode ser colocado sobre um disco de tamanho menor.
+   1. Apenas um disco pode ser movido por vez (o disco que estiver no topo da pilha de um dos pinos).
+   2. Um disco de tamanho maior nunca pode ser colocado sobre um disco de tamanho menor.
 
    Faça um programa com função recursiva que resolve o jogo das Torres de Hanoi.
 
@@ -733,29 +698,28 @@
 
 1. Faça um programa concorrente que crie 10 _threads_ que exibam o nome da _thread_ e a hora atual.
 
-1. Faça um programa concorrente que crie 10 _threads_ que exibam o nome da _thread_ e um contador que varia de 1 a 10.
+2. Faça um programa concorrente que crie 10 _threads_ que exibam o nome da _thread_ e um contador que varia de 1 a 10.
    Execute várias vezes e observe as variações na saída. Os valores são sempre impressos na mesma ordem? Qual a causa
    desta diferença?
 
-1. Faça um programa que gere um array de 1 bilhão de números inteiros aleatórios e faça as seguintes tarefas:
-    1. Some todos os valores de forma sequencial e meça o tempo de execução;
-    1. Some todos os valores de forma concorrente com 10 _threads_ e meça o tempo de execução;
-    1. Some todos os valores de forma concorrente com 100 _threads_ e meça o tempo de execução.
-    1. Some todos os valores de forma concorrente com a quantidade de _threads_ igual à quantidade de núcleos no sistema
-       operacional e meça o tempo de execução.
-    1. Responda as seguintes perguntas:
-        1. Qual foi o _speedup_[^1] obtido?
-        1. Teve algum caso que o _speedup_ foi negativo?
-    1. Repita os testes acima usando _Threads_ virtuais.
-        1. Houve diferenças entre _Threads_ de plataforma e _Threads_ virtuais? Se houve, quais foram e explique o
-           porquê das diferenças.
+3. Faça um programa que gere um array de 1 bilhão de números inteiros aleatórios e faça as seguintes tarefas:
 
-1. Faça um programa que crie uma lista (_ArrayList_) e manipule ela com as seguintes _threads_:
-    - Duas _threads_ incluindo valores aleatórios na lista.
-    - Uma _thread_ removendo o primeiro valor da lista.
-    - Uma _thread_ imprimindo a cada segundo os valores existentes.
-
-1. O banco Firmeza desenvolveu um sistema de contas e saldos bancários e lhe contratou para executar um teste de
+   1. Some todos os valores de forma sequencial e meça o tempo de execução;
+   2. Some todos os valores de forma concorrente com 10 _threads_ e meça o tempo de execução;
+   3. Some todos os valores de forma concorrente com 100 _threads_ e meça o tempo de execução.
+   4. Some todos os valores de forma concorrente com a quantidade de _threads_ igual à quantidade de núcleos no sistema
+      operacional e meça o tempo de execução.
+   5. Responda as seguintes perguntas:
+      1. Qual foi o _speedup_[^1] obtido?
+      2. Teve algum caso que o _speedup_ foi negativo?
+   6. Repita os testes acima usando _Threads_ virtuais.
+      1. Houve diferenças entre _Threads_ de plataforma e _Threads_ virtuais? Se houve, quais foram e explique o
+         porquê das diferenças.
+4. Faça um programa que crie uma lista (_ArrayList_) e manipule ela com as seguintes _threads_:
+   - Duas _threads_ incluindo valores aleatórios na lista.
+   - Uma _thread_ removendo o primeiro valor da lista.
+   - Uma _thread_ imprimindo a cada segundo os valores existentes.
+5. O banco Firmeza desenvolveu um sistema de contas e saldos bancários e lhe contratou para executar um teste de
    desempenho para avaliar a robusteza e a quantidade de transações possíveis de serem processadas por 3 minutos. Para
    avaliar a desempenho do sistema foram criadas 100 contas correntes fictícias com
    R$ 1.000,00 de saldo inicial. Crie então um teste com programação concorrente que simule 5 sistemas fazendo
@@ -763,25 +727,21 @@
    cada 5 segundos, imprima o valor total no cofre do banco, que deverá ser sempre de R$ 100.000,00. Após 3 minutos de
    execução, verifique a quantidade de transações que foram executadas e se o valor total no cofre continua sendo
    R$ 100.000,00.
-
-1. Reescreva o exercício 3
+6. Reescreva o exercício 3
    usando [Executors](https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/concurrent/package-summary.html#executors-heading).
    Faça os testes com 10 e 100 _Threads_ usando os _Executors_ abaixo listados. Explique o funcionamento de cada
    _Executor_ e o motivo da diferença nos tempos recebidos.
-    - _ThreadPerTaskExecutor_
-    - _VirtualThreadPerTaskExecutor_
-    - _CachedThreadPool_
-    - _WorkStealingPool_
-
-1. Em uma cozinha, existe uma pilha de 100 pratos sujos. Para tal, temos uma pessoa lavando pratos e duas secando os
+   - _ThreadPerTaskExecutor_
+   - _VirtualThreadPerTaskExecutor_
+   - _CachedThreadPool_
+   - _WorkStealingPool_
+7. Em uma cozinha, existe uma pilha de 100 pratos sujos. Para tal, temos uma pessoa lavando pratos e duas secando os
    pratos. Entre eles, existe um escorredor com espaço para apenas 10 pratos. Faça um programa que simule a lavação dos
    100 pratos sujos, sua colocação no escorredor e a secagem destes. Após enxugar cada prato, ele será colocado na pilha
    de pratos limpos.
-
-1. Descubra qual a quantidade de _Threads_ que o seu sistema consegue criar. Para isso, fique criando _Threads_ de
+8. Descubra qual a quantidade de _Threads_ que o seu sistema consegue criar. Para isso, fique criando _Threads_ de
    plataforma e "estacione" elas com o método _park ()_ da classe _LockSupport_.
-
-1. Observe o programa a seguir, e diga o motivo do valor de saída no console às vezes não ser 2000. Qual seria a
+9. Observe o programa a seguir, e diga o motivo do valor de saída no console às vezes não ser 2000. Qual seria a
    correção?
 
 ```java
@@ -827,74 +787,74 @@ public class Exercicio09 {
 1. Faça um programa que conecte numa base [Redis](https://redis.io/) e chame as funções `Ping` e `Echo`. Utilize a
    linguagem [Java](https://www.java.com/) com a biblioteca [Jedis](https://github.com/redis/jedis).
 
-1. Crie 10 entradas chave-valor aleatórios e em seguida acesse o banco Redis com algum programa GUI
+2. Crie 10 entradas chave-valor aleatórios e em seguida acesse o banco Redis com algum programa GUI
    ([RedisInsight](https://redis.io/insight/), [Another Redis Desktop Manager](https://goanother.com/)
-   ou [Redis for VS Code](https://marketplace.visualstudio.com/items?itemName=Redis.redis-for-vscode)) e verifique se as
-   chaves foram criadas. Depois volte ao programa e liste as chaves e seus respectivos valores.
+   ou [Redis for VS Code](https://marketplace.visualstudio.com/items?itemName=Redis.redis-for-vscode)) e verifique se as chaves foram criadas. Depois volte ao programa e liste as chaves e
+   seus respectivos valores.
 
-1. Crie uma chave inteira com o nome "programa:execucoes" e a cada chamada do programa execute a função `Incr`.
+3. Crie uma chave inteira com o nome "programa:execucoes" e a cada chamada do programa execute a função `Incr`.
    Verifique pela GUI se o valor está sendo incrementado.
 
-1. Salve na base de dados uma lista de 10 usuários usando o tipo de dado `List`.
+4. Salve na base de dados uma lista de 10 usuários usando o tipo de dado `List`.
 
-1. Salve na base de dados uma lista de 10 usuários usando o tipo de dado `Set`.
+5. Salve na base de dados uma lista de 10 usuários usando o tipo de dado `Set`.
 
-1. Salve na base de dados uma lista de 10 usuários usando o tipo de dado `Sorted Set`.
+6. Salve na base de dados uma lista de 10 usuários usando o tipo de dado `Sorted Set`.
 
-1. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
+7. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
    que implemente as operações básicas de C.R.U.D.[^2] para fazerem a persistência dos objetos na base chave-valor
    usando o tipo _Hash_ de dados. A chave da coleção _hash_ será "contatos1:" mais o id da pessoa. Ex: `contatos:1`,
    `contatos:2`
 
-1. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
+8. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
    que implemente as operações básicas de C.R.U.D.[^2] para fazerem a persistência dos objetos na base chave-valor
    usando do mecanismo de serialização do Java. Neste exercício será usada a mesma estratégia de chaves do
    exercício anterior, ou seja, chave "contatos2:" + o id da pessoa.
 
-1. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
+9. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
    que implemente as operações básicas de C.R.U.D.[^2] para fazerem a persistência dos objetos na base chave-valor
    usando do mecanismo de serialização do Java. Neste exercício será usado uma entrada _Hash_ somente. Cada valor
    interno do _Hash_ terá o id da pessoa como chave e a objeto serializado como valor.
 
-1. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
-   que implemente as operações básicas de C.R.U.D.[^2] para fazerem a persistência dos objetos na base chave-valor
-   usando o tipo de dados JSON[^4] através da biblioteca [GSON](https://github.com/google/gson), já incluída na
-   biblioteca [Jedis](https://github.com/redis/jedis).
-   Neste exercício será usada a mesma estratégia de chaves do exercício 8, ou seja, chave "contatos4:" + o id da pessoa.
+10. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc), e após isto crie uma classe PessoaDAO
+    que implemente as operações básicas de C.R.U.D.[^2] para fazerem a persistência dos objetos na base chave-valor
+    usando o tipo de dados JSON[^4] através da biblioteca [GSON](https://github.com/google/gson), já incluída na
+    biblioteca [Jedis](https://github.com/redis/jedis).
+    Neste exercício será usada a mesma estratégia de chaves do exercício 8, ou seja, chave "contatos4:" + o id da pessoa.
 
-1. Faça um programa que fique publicando (`Publish`) a cada 20 segundos um número aleatório no tópico
-   `codigo:seguranca`. Faça um segundo programa que assine (`Subscribe`) a este mesmo tópico e que exiba os valores que
-   vem sendo publicados.
+11. Faça um programa que fique publicando (`Publish`) a cada 20 segundos um número aleatório no tópico
+    `codigo:seguranca`. Faça um segundo programa que assine (`Subscribe`) a este mesmo tópico e que exiba os valores que
+    vem sendo publicados.
 
 ## NoSQL Documento
 
 1. Importe as bases de dados de exemplo
    do [airbnb](src/main/resources/mongodb/airbnb/), [mflix](src/main/resources/mongodb/mflix/)
    e [weather](src/main/resources/mongodb/weather/) e responda as seguintes perguntas sobre cada uma delas:
-    1. Quantas coleções existem?
-    1. Qual o tipo de dado usado para Id?
-    1. Quais tipos de dados foram usados pelos campos no primeiro nível de cada documento?
-    1. São aproximadamente quantos campos por documento?
-    1. Existe "relacionamento" entre os documentos?
-    1. Caso fosse usado um banco relacional, como ficaria o Modelo Entidade-Relacionamento.
-    1. Existem dados geoespaciais? Se sim, como são armazenados?
-    1. Cite vantagens e desvantagens do uso do modelo documento neste caso.
+   1. Quantas coleções existem?
+   2. Qual o tipo de dado usado para Id?
+   3. Quais tipos de dados foram usados pelos campos no primeiro nível de cada documento?
+   4. São aproximadamente quantos campos por documento?
+   5. Existe "relacionamento" entre os documentos?
+   6. Caso fosse usado um banco relacional, como ficaria o Modelo Entidade-Relacionamento.
+   7. Existem dados geoespaciais? Se sim, como são armazenados?
+   8. Cite vantagens e desvantagens do uso do modelo documento neste caso.
 
    > Dica: Use a ferramenta [Mongodb Compass](https://www.mongodb.com/products/tools/compass)
 
-1. Com a base de dados do [mflix](src/main/resources/mongodb/mflix/) e faça os seguintes programas com a
+2. Com a base de dados do [mflix](src/main/resources/mongodb/mflix/) e faça os seguintes programas com a
    linguagem [Java](https://www.java.com/) e a
    biblioteca [MongoDB Synchronous Driver](https://www.mongodb.com/pt-br/docs/drivers/java/sync/current/):
-    1. Liste os filmes com o nome "_The Room_".
-    1. Liste os filmes que possuam uma duração ("_runtime_") menor ou igual à 15 minutos.
-    1. Liste os filmes produzidos nos anos 1980s ordenados do maior ao menor valor no campo "_imdb.rating_".
-    1. Liste os nomes e gêneros dos filmes que contenham, ao menos, ambos gêneros "_Drama_" e "_Comedy_".
-    1. Liste, em ordem alfabética, os nomes e a quantidade de prêmios recebidos dos filmes que possuam mais de 3 prêmios
-       ganhos.
-    1. Insira o filme [O Triunfo dos Nerds](https://www.imdb.com/title/tt0115398).
-    1. Insira o filme [Silicon Cowboys](http://www.imdb.com/title/tt4938484) e inclua dois comentários.
-    1. Para os filmes lançados antes de 1950, inclua o gênero _old_.
-1. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc) e com pelo menos 1 atributo composto
+   1. Liste os filmes com o nome "_The Room_".
+   2. Liste os filmes que possuam uma duração ("_runtime_") menor ou igual à 15 minutos.
+   3. Liste os filmes produzidos nos anos 1980s ordenados do maior ao menor valor no campo "_imdb.rating_".
+   4. Liste os nomes e gêneros dos filmes que contenham, ao menos, ambos gêneros "_Drama_" e "_Comedy_".
+   5. Liste, em ordem alfabética, os nomes e a quantidade de prêmios recebidos dos filmes que possuam mais de 3 prêmios
+      ganhos.
+   6. Insira o filme [O Triunfo dos Nerds](https://www.imdb.com/title/tt0115398).
+   7. Insira o filme [Silicon Cowboys](http://www.imdb.com/title/tt4938484) e inclua dois comentários.
+   8. Para os filmes lançados antes de 1950, inclua o gênero _old_.
+3. Crie a classe Pessoa, com os atributos mais comuns (id, nome, telefone, etc) e com pelo menos 1 atributo composto
    (endereço contento rua, bairro, cep, tipo), e após isto crie uma classe PessoaDAO que implemente as operações básicas
    de C.R.U.D.[^2] para fazerem a persistência dos objetos na base documento usando o formato BSON[^3].
 
@@ -903,31 +863,32 @@ public class Exercicio09 {
 1. Com o uso da
    biblioteca [MongoDB Extension for Hibernate ORM](https://www.mongodb.com/docs/languages/java/mongodb-hibernate/current/),
    vamos criar uma aplicação C.R.U.D[^2]:
+
    > Observação: A instância do MongoDB deverá iniciar com o parâmetro `--replSet rs0` e no mongosh deverá ser executado
    > o comando `rs.initiate()` para ele suportar transações.
-    1. Crie classes de modelo com a seguinte estrutura e com as anotações do _Morphia_:
-        - Livro:
-            - id
-            - titulo
-            - autor (_Referenced_)
-            - ano
-        - Autor
-            - id
-            - nome
-            - livros (_Referenced_)
-            - endereços (_Embedded_)
-        - Endereço
-            - rua
-            - complemento
-            - bairro
-            - cep
-            - tipo
 
-    1. Crie o livro [O Corvo](https://pt.wikipedia.org/wiki/O_Corvo) e o armazene na base do MongoDB e após isto
-       crie os dados do autor Edgar Allan Poe, do seu endereço residencial, e do livro e o armazene.
-    1. Busque o autor _Edgar Allan Poe_ e apresente todos os seus dados (endereços e livros).
-    1. Adicione mais 2 livros escritos por este autor.
-    1. Altere o nome do livro _O Corvo_ para _O Corvo e outros contos extraordinários_.
+   1. Crie classes de modelo com a seguinte estrutura e com as anotações do _Hibernate_:
+      - Livro:
+      - id
+      - titulo
+      - autor (_Referenced_)
+      - ano
+   - Autor
+     - id
+     - nome
+     - livros (_Referenced_)
+     - endereços (_Embedded_)
+   - Endereço
+     - rua
+     - complemento
+     - bairro
+     - cep
+     - tipo
+   2. Crie o livro [O Corvo](https://pt.wikipedia.org/wiki/O_Corvo) e o armazene na base do MongoDB e após isto
+      crie os dados do autor Edgar Allan Poe, do seu endereço residencial, e do livro e o armazene.
+   3. Busque o autor _Edgar Allan Poe_ e apresente todos os seus dados (endereços e livros).
+   4. Adicione mais 2 livros escritos por este autor.
+   5. Altere o nome do livro _O Corvo_ para _O Corvo e outros contos extraordinários_.
 
 ## Filmes
 

@@ -73,6 +73,25 @@
                             <sortPlugins>groupId,artifactId</sortPlugins>
                         </sortPom>
                     </pom>
+                    <markdown>
+                        <includes>
+                            <include>**/*.md</include>
+                        </includes>
+                        <excludes>
+                            <exclude>target/**</exclude>
+                        </excludes>
+                        <flexmark>
+                            <version>0.64.8</version>
+                            <emulationProfile>GITHUB_DOC</emulationProfile>
+                            <pegdownExtensions>ALL</pegdownExtensions>
+                            <extensions>Tables,TaskList</extensions>
+                            <formatterOptions>
+                                <rightMargin>0</rightMargin>
+                                <maxBlankLines>1</maxBlankLines>
+                                <fencedCodeSpaceBeforeInfo>false</fencedCodeSpaceBeforeInfo>
+                            </formatterOptions>
+                        </flexmark>
+                    </markdown>
                 </configuration>
             </plugin>
             <plugin>
