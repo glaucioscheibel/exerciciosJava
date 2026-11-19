@@ -1,29 +1,33 @@
 package com.github.glaucioscheibel.nosql.documento.odm;
 
+import static com.github.glaucioscheibel.nosql.documento.odm.util.HibernateUtil.getSessionFactory;
+
 import com.github.glaucioscheibel.nosql.documento.odm.model.Autor;
 import com.github.glaucioscheibel.nosql.documento.odm.model.Livro;
-import com.mongodb.client.MongoClients;
-import dev.morphia.Datastore;
-import dev.morphia.Morphia;
-import dev.morphia.query.Query;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 public class Exercicio0104 {
     static void main() {
-        Datastore datastore = Morphia.createDatastore(MongoClients.create());
-        Livro gato = new Livro("O Gato Preto");
-        gato.setAno(1843);
-        gato = datastore.save(gato);
-        Livro escaravelho = new Livro("O Escaravelho de Ouro");
-        escaravelho.setAno(1862);
-        escaravelho = datastore.save(escaravelho);
-        Query<Autor> query = datastore.find(Autor.class);
-        Autor edgar = query.first();
-        if (edgar != null) {
-            edgar.addLivro(escaravelho);
-            edgar.addLivro(gato);
-            datastore.save(edgar);
-        } else {
-            System.err.println("Edgar Allan Poe não encontrado!");
+        try (Session session = getSessionFactory().openSession()) {
+            Transaction tx = session.beginTransaction();
+            Livro gato = new Livro("O Gato Preto");
+            gato.setAno(1843);
+            session.persist(gato);
+            Livro escaravelho = new Livro("O Escaravelho de Ouro");
+            escaravelho.setAno(1862);
+            session.persist(escaravelho);
+            Autor edgar = session.createQuery("from Autor a where a.nome = :nome", Autor.class)
+                    .setParameter("nome", "Edgar Allan Poe")
+                    .getSingleResult();
+            if (edgar != null) {
+                edgar.addLivro(escaravelho);
+                edgar.addLivro(gato);
+                tx.commit();
+            } else {
+                System.err.println("Edgar Allan Poe não encontrado!");
+                tx.setRollbackOnly();
+            }
         }
     }
 }

@@ -1,27 +1,26 @@
 package com.github.glaucioscheibel.nosql.documento.odm.model;
 
-import dev.morphia.annotations.Entity;
-import dev.morphia.annotations.Field;
-import dev.morphia.annotations.Id;
-import dev.morphia.annotations.Index;
-import dev.morphia.annotations.IndexOptions;
-import dev.morphia.annotations.Indexes;
-import dev.morphia.annotations.Reference;
+import com.mongodb.hibernate.annotations.ObjectIdGenerator;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 import org.bson.types.ObjectId;
 
 @Entity
-@Indexes(@Index(fields = @Field("nome"), options = @IndexOptions(unique = true)))
+@Table(name = "autor")
 public class Autor {
     @Id
+    @ObjectIdGenerator
     private ObjectId id;
 
     private String nome;
 
     private List<Endereco> enderecos;
 
-    @Reference
+    @OneToMany
     private List<Livro> livros;
 
     public Autor() {}

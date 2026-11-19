@@ -1,20 +1,20 @@
 package com.github.glaucioscheibel.nosql.documento.odm;
 
-import static dev.morphia.query.filters.Filters.eq;
-import static dev.morphia.query.updates.UpdateOperators.set;
+import static com.github.glaucioscheibel.nosql.documento.odm.util.HibernateUtil.getSessionFactory;
 
 import com.github.glaucioscheibel.nosql.documento.odm.model.Livro;
-import com.mongodb.client.MongoClients;
-import dev.morphia.Datastore;
-import dev.morphia.Morphia;
-import dev.morphia.UpdateOptions;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 public class Exercicio0105 {
     static void main() {
-        Datastore datastore = Morphia.createDatastore(MongoClients.create());
-        datastore
-                .find(Livro.class)
-                .filter(eq("titulo", "O Corvo"))
-                .update(new UpdateOptions(), set("titulo", "O Corvo e outros contos extraordinários"));
+        try (Session session = getSessionFactory().openSession()) {
+            Transaction tx = session.beginTransaction();
+            Livro corvo = session.createQuery("from Livro l where l.titulo = :titulo", Livro.class)
+                    .setParameter("titulo", "O Corvo")
+                    .getSingleResult();
+            corvo.setTitulo("O Corvo e outros contos extraordinários");
+            tx.commit();
+        }
     }
 }

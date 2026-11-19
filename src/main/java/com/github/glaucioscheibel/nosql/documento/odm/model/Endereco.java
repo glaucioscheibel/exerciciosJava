@@ -1,8 +1,10 @@
 package com.github.glaucioscheibel.nosql.documento.odm.model;
 
-import dev.morphia.annotations.Entity;
+import jakarta.persistence.Embeddable;
+import org.hibernate.annotations.Struct;
 
-@Entity
+@Embeddable
+@Struct(name = "endereco")
 public class Endereco {
     private String rua;
     private String bairro;

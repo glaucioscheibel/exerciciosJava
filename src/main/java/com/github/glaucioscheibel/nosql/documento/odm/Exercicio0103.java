@@ -1,19 +1,17 @@
 package com.github.glaucioscheibel.nosql.documento.odm;
 
-import static dev.morphia.query.filters.Filters.eq;
+import static com.github.glaucioscheibel.nosql.documento.odm.util.HibernateUtil.getSessionFactory;
 
 import com.github.glaucioscheibel.nosql.documento.odm.model.Autor;
-import com.mongodb.client.MongoClients;
-import dev.morphia.Datastore;
-import dev.morphia.Morphia;
-import dev.morphia.query.Query;
+import org.hibernate.Session;
 
 public class Exercicio0103 {
     static void main() {
-        Datastore datastore = Morphia.createDatastore(MongoClients.create());
-        Query<Autor> query = datastore.find(Autor.class);
-        query = query.filter(eq("nome", "Edgar Allan Poe"));
-        Autor edgar = query.first();
-        System.out.println(edgar);
+        try (Session session = getSessionFactory().openSession()) {
+            Autor edgar = session.createQuery("from Autor a where a.nome = :nome", Autor.class)
+                    .setParameter("nome", "Edgar Allan Poe")
+                    .getSingleResult();
+            System.out.println(edgar);
+        }
     }
 }
