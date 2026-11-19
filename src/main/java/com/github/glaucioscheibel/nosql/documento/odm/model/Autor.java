@@ -1,6 +1,7 @@
 package com.github.glaucioscheibel.nosql.documento.odm.model;
 
 import com.mongodb.hibernate.annotations.ObjectIdGenerator;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
@@ -20,8 +21,8 @@ public class Autor {
 
     private List<Endereco> enderecos;
 
-    @OneToMany
-    private List<Livro> livros;
+    @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL)
+    private List<Livro> livros = new ArrayList<>();
 
     public Autor() {}
 
@@ -72,6 +73,7 @@ public class Autor {
         if (this.livros == null) {
             this.livros = new ArrayList<>();
         }
+        livro.setAutor(this);
         this.livros.add(livro);
     }
 

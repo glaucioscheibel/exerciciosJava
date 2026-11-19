@@ -13,10 +13,8 @@ public class Exercicio0104 {
             Transaction tx = session.beginTransaction();
             Livro gato = new Livro("O Gato Preto");
             gato.setAno(1843);
-            session.persist(gato);
             Livro escaravelho = new Livro("O Escaravelho de Ouro");
             escaravelho.setAno(1862);
-            session.persist(escaravelho);
             Autor edgar = session.createQuery("from Autor a where a.nome = :nome", Autor.class)
                     .setParameter("nome", "Edgar Allan Poe")
                     .getSingleResult();

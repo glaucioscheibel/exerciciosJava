@@ -14,7 +14,6 @@ public class Exercicio0102 {
             Transaction tx = session.beginTransaction();
             Livro corvo = new Livro("O Corvo");
             corvo.setAno(1845);
-            session.persist(corvo);
             Autor edgar = new Autor("Edgar Allan Poe");
             Endereco endereco1 = new Endereco();
             endereco1.setRua("7th Street");
