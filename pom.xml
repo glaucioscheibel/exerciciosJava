@@ -62,8 +62,8 @@
                 <configuration>
                     <java>
                         <palantirJavaFormat>
-                            <version>21.0.2</version>
                             <groupArtifact>dev.openjavaformat:open-java-format</groupArtifact>
+                            <version>21.0.2</version>
                         </palantirJavaFormat>
                         <forbidWildcardImports/>
                         <formatAnnotations/>
