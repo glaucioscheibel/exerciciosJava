@@ -1,8 +1,12 @@
 package com.github.glaucioscheibel.nosql.documento.exercicio03;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Pessoa {
 
+    @SerializedName("_id")
     private int id;
+
     private String nome;
     private String sobrenome;
     private String telefone;

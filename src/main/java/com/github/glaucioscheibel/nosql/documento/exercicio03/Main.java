@@ -30,9 +30,8 @@ public class Main {
         input.close();
     }
 
-    private static void create() {
+    private static Pessoa readPessoa() {
         Pessoa p = new Pessoa();
-        System.out.println("Create:");
         System.out.print("id: ");
         p.setId(input.nextInt());
         input.nextLine();
@@ -45,11 +44,19 @@ public class Main {
         System.out.print("Idade: ");
         p.setIdade(input.nextInt());
         input.nextLine();
+        return p;
+    }
+
+    private static void create() {
+        System.out.println("Create:");
+        Pessoa p = readPessoa();
         dao.create(p);
     }
 
     private static void update() {
-        create();
+        System.out.println("Update:");
+        Pessoa p = readPessoa();
+        dao.update(p);
     }
 
     private static void read() {
