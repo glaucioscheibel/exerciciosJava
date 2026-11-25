@@ -63,7 +63,7 @@
                     <java>
                         <palantirJavaFormat>
                             <groupArtifact>dev.openjavaformat:open-java-format</groupArtifact>
-                            <version>21.1.0</version>
+                            <version>21.1.1</version>
                         </palantirJavaFormat>
                         <forbidWildcardImports/>
                         <formatAnnotations/>
